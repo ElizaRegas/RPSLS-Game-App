@@ -34,6 +34,6 @@ server.on("error", (err) => {
  console.error('Server error:', err);
 });
 
-server.listen(8080, () => {
- console.log('RPSLS started on 8080');
+server.listen(80, () => {
+ console.log('RPSLS started on 80');
 });
