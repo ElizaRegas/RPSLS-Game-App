@@ -2,6 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "8.9.4"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -17,5 +20,9 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://elizaregas.github.io/RPSLS-Game-App"
+  },
 }
