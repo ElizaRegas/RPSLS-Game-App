@@ -6,7 +6,7 @@ const rpslsGame = require('./rpslsGameLogic');
 
 const app = express();
 
-const clientPath = `../client/`;
+const clientPath = `${__dirname}/../client/`;
  console.log('Serving static from ' + clientPath);
 app.use(express.static(clientPath));
 
