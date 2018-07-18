@@ -5,6 +5,7 @@ const socketio = require('socket.io');
 const rpslsGame = require('./rpslsGameLogic');
 
 const app = express();
+const port = process.env.PORT || 8080;
 
 const clientPath = `${__dirname}/../client/`;
  console.log('Serving static from ' + clientPath);
@@ -34,6 +35,6 @@ server.on("error", (err) => {
  console.error('Server error:', err);
 });
 
-server.listen(80, () => {
- console.log('RPSLS started on 80');
+server.listen(port, () => {
+ console.log('RPSLS started on 8080');
 });
