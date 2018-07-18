@@ -5,9 +5,9 @@ const writeEvent = (text) =>  {
 
   // <LI> ELEMENT
   let el = document.createElement('div');
+  el.className = "createdDiv";
   el.innerHTML = text;
-  el.style = "margin: 1% 2% 1% 2%;";
-  // el.style = `@media only screen and (max-width : 800px) {margin: 2% 2% .5% 2%; font-size: 1.5vw};`;
+  // el.style = "margin: 1% 2% 1% 2%;";
 
   parent.appendChild(el);
 

@@ -18,6 +18,10 @@ button {
 }
 /* CLASSES -----------------------------------------------------------
 ---------------------------------------------------------------------- */
+.createdDiv {
+    margin: 1% 2%;
+    font-size: 1vw;
+}
 .header {
     padding: 2%;
     border-bottom: 2px solid black;
@@ -72,6 +76,7 @@ button {
 }
 .rpslsWrapper {
     clear: both;
+    width: 100%;
 }
 .rulesCenterImg {
     width: 15%;
@@ -203,6 +208,19 @@ button {
 /* Smartphones (portrait) --------------------------------------------
 ---------------------------------------------------------------------- */
 @media only screen and (max-width : 320px) {
+    .createdDiv {
+        font-size: 4vw;
+    }
+    .header {
+        font-size: 4vw;
+        width: 18% !important;
+    }
+    .resultsWrapper {
+        width: 100%;
+    }
+    .row1 {
+        width: 12%;
+    }
     /* scissors */
     .rpslsImg {
         margin: 10% 0% 5% 0% !important;
@@ -215,8 +233,8 @@ button {
     .rpslsImgR {
         margin: 5% 0% 5% 0% !important;
     }
-    .row1 {
-        width: 12%;
+    .rpslsWrapper {
+        width: 100% !important;
     }
     .rulesCenterImg {
         width: 12%;
@@ -242,21 +260,27 @@ button {
         width: 10%;
     }
     #chat {
-        width: 73%;
-        margin-bottom: 3% !important;
-        margin-left: -.5%;
+        width: 75%;
+        margin: 0% auto;
+        margin-bottom: 1.5%;
+    }
+    #chat-form {
+        width: 100%;
+        margin: 0% auto;
+        margin-top:  1.5%;
     }
     #clearBoth {
-        width: 63%;
+        width: 100%;
     }
     #events {
-        width: 66%;
+        width: 100%;
         height: 50vw;
         border: 1px solid #fff;
     }
     #headerWrapper {
         margin-top: 7% !important;
         padding-bottom: 5%;
+        width: 100% !important;
     }
     /* rock */
     #imgMarginL {
@@ -267,26 +291,27 @@ button {
         margin: -.5% 2.5% 5% 0% !important;
     }
     #lizard {
-        margin: -7.5% 20% 0% 0%;
+        margin: -7.5% 22% 0% 0%;
     }
     #paper {
-        margin: -7% 0% 0% 20%;
+        margin: -7% 0% 0% 22%;
     }
     #rock {
         margin: -15% 0% 0% 4%;
     }
     #say {
-        width: 22.5%;
-        font-size: 2vw !important;
+        width: 20%;
+        font-size: 3.5vw !important;
         color: white;
-        padding: 2.15%;
-        margin-right: -.5%;
     }
     #scissors {
         margin: -10% 0% 0% 0% !important;
     }
     #spock {
         margin: -15.5% 4% 0% 0%;
+    }
+    #lossDiv, #tieDiv, #winDiv {
+        font-size: 3vw;
     }
 }
 /* Smartphones (landscape) --------------------------------------------
@@ -305,7 +330,7 @@ button {
         margin: 5% 0% 5% 0% !important;
     }
     #chat {
-        width: 73%;
+        width: 70%;
         margin-bottom: 3% !important;
         margin-left: -.5%;
     }
@@ -336,7 +361,7 @@ button {
         margin: -15% 0% 0% 4%;
     }
     #say {
-        width: 22.5%;
+        width: 20%;
     }
     #scissors {
         margin: -10% 0% -5% 0% !important;
