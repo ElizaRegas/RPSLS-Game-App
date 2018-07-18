@@ -1,0 +1,495 @@
+html {
+    width: 100%;
+    margin: 0px auto !important;
+}
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% auto !important;
+}
+button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
+}
+/* CLASSES -----------------------------------------------------------
+---------------------------------------------------------------------- */
+.header {
+    padding: 2%;
+    border-bottom: 2px solid black;
+    text-align:  center;
+    font-family: 'Marck Script', cursive;
+    font-size: 2vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    text-shadow:  2px 2px 8px grey;
+    color: black;
+    background-color:  t;
+}
+.resultsWrapper {
+    clear: both;
+    width: 66%;
+    margin: 0% auto !important;
+    margin-top: 2vw !important;
+    text-align:  -webkit-center;
+    font-size: 1.5vw;
+    margin-bottom:  2vw !important;
+}
+.rps {
+    width: 20%;
+    padding: 2%;
+    margin: 0%;
+    background-image: url("../images/Green.jpg");
+    border: 30px solid black;
+    float: left;
+}
+.rpslsImg {
+    width: 15%;
+    padding: 2%;
+    padding-bottom: -10vw !important;
+    margin: 0% auto !important;
+    margin-bottom: 0vw !important;
+    align-items:  center;
+}
+.rpslsImgL {
+    width: 15%;
+    padding: 2%;
+    margin: 0% auto !important;
+    align-items:  center;
+    float: left;
+}
+.rpslsImgR {
+    width: 15%;
+    padding: 2%;
+    margin: 0% auto !important;
+    align-items:  center;
+    float: right;
+}
+.rpslsWrapper {
+    clear: both;
+}
+.rulesCenterImg {
+    width: 15%;
+    margin: 0% auto;
+    margin-left: 4% !important;
+}
+.rulesLeftArrow {
+    width: 15%;
+    float: left;
+}
+.rulesLeftImg {
+    float: left;
+    margin: 2% 4% 0% 8%;
+    width: 12%;
+}
+.rulesRightArrow {
+    width: 15%;
+    float: right;
+}
+.rulesRightImg {
+    float: right;
+    margin: 2% 8% 0% 4%;
+    width: 12%;
+}
+/* IDS ---------------------------------------------------------------
+---------------------------------------------------------------------- */
+#chat {
+    float: left;
+    width: 85%;
+    box-shadow: 2px 2px 2px grey;
+}
+#chat-form {
+    width: 66%;
+    margin: 0% auto;
+    margin-top:  1.5%;
+}
+#clearBoth {
+    clear: both;
+    background-image: url("../images/Green.jpg");
+    width: 62.4%;
+    padding: 2%;
+    margin: 0% auto;
+    margin-top: 4.3% !important;
+    background-size:  cover;
+}
+#conversation {
+    padding: 5%;
+}
+#events {
+    overflow: scroll;
+    position: relative;
+    width: 65%;
+    height: 15vw;
+    border-top: 1vw solid #fff;
+    border-left: 1vw solid white;
+    margin: auto;
+}
+#headerText {
+    text-align: center !important;
+    color: black;
+    padding: 3% 0% 0% 0% !important;
+    font-family: 'Marck Script', cursive;
+    text-shadow:  2px 2px 8px grey;
+    font-size: 5vw !important;
+}
+#headerWrapper {
+    margin-top: 3% !important;
+    background-image: url("../images/Green.jpg");
+    background-size:  cover;
+    width: 66%;
+    margin: 0% auto !important;
+}
+#imgMarginL {margin-left: 2.5% !important;}
+#imgMarginR {margin-right: 2.5% !important;}
+#lizard {float: right;width: 22%;}
+#lossDiv {
+    float: right;
+    border: 1px solid white;
+    width: 25%;
+    padding: 1%;
+}
+#paper {
+    float: left;
+    width: 22%;
+}
+#rock {
+    float: left;
+    margin-left:  4%;
+    width: 16%;
+}
+#rulesText {
+    text-align: center !important;
+    color: black;
+    margin: 0% 0% 2% 0%;
+    font-family: 'Marck Script', cursive;
+    text-shadow:  2px 2px 8px grey;
+}
+#say {
+    background-image:  url('../images/Green.jpg');
+    float: right;
+    width: 12%;
+    font-size: 70%;
+    color: white;
+    padding: .4 !important;
+    box-shadow: 1px 1px 1px grey;
+    text-shadow:  2px 2px 8px grey;
+    border: 2px inset lightgrey;
+}
+#scissors {
+    width: 16%;
+}
+#spock {
+    float:  right;
+    margin-right: 5%;
+    width: 15%;
+}
+#tieDiv {
+    border: 1px solid white;
+    width: 25%;
+    padding: 1%;
+}
+#winDiv {
+    float: left;
+    border: 1px solid white;
+    width: 25%;
+    padding: 1%;
+}
+
+/* Smartphones (portrait) --------------------------------------------
+---------------------------------------------------------------------- */
+@media only screen and (max-width : 320px) {
+    /* scissors */
+    .rpslsImg {
+        margin: 10% 0% 5% 0% !important;
+    }
+    /* paper */
+    .rpslsImgL {
+        margin: 5% 0% 5% 0% !important;
+    }
+    /* lizard */
+    .rpslsImgR {
+        margin: 5% 0% 5% 0% !important;
+    }
+    .row1 {
+        width: 12%;
+    }
+    .rulesCenterImg {
+        width: 12%;
+        margin: 0% auto;
+        margin-left: 10% !important;
+    }
+    .rulesLeftArrow {
+        width: 12%;
+        float: left;
+    }
+    .rulesLeftImg {
+        float: left;
+        margin: 2% 4% 0% 8%;
+        width: 10%;
+    }
+    .rulesRightArrow {
+        width: 12%;
+        float: right;
+    }
+    .rulesRightImg {
+        float: right;
+        margin: 2% 8% 0% 4%;
+        width: 10%;
+    }
+    #chat {
+        width: 73%;
+        margin-bottom: 3% !important;
+        margin-left: -.5%;
+    }
+    #clearBoth {
+        width: 63%;
+    }
+    #events {
+        width: 66%;
+        height: 50vw;
+        border: 1px solid #fff;
+    }
+    #headerWrapper {
+        margin-top: 7% !important;
+        padding-bottom: 5%;
+    }
+    /* rock */
+    #imgMarginL {
+        margin: 0% 0% 5% 2.5% !important;
+    }
+    /* spock */
+    #imgMarginR {
+        margin: -.5% 2.5% 5% 0% !important;
+    }
+    #lizard {
+        margin: -7.5% 20% 0% 0%;
+    }
+    #paper {
+        margin: -7% 0% 0% 20%;
+    }
+    #rock {
+        margin: -15% 0% 0% 4%;
+    }
+    #say {
+        width: 22.5%;
+        font-size: 2vw !important;
+        color: white;
+        padding: 2.15%;
+        margin-right: -.5%;
+    }
+    #scissors {
+        margin: -10% 0% 0% 0% !important;
+    }
+    #spock {
+        margin: -15.5% 4% 0% 0%;
+    }
+}
+/* Smartphones (landscape) --------------------------------------------
+---------------------------------------------------------------------- */
+@media only screen and (min-width : 321px) and (max-width : 600px) {
+    /* scissors */
+    .rpslsImg {
+        margin: 10% 0% 5% 0% !important;
+    }
+    /* paper */
+    .rpslsImgL {
+        margin: 5% 0% 5% 0% !important;
+    }
+    /* lizard */
+    .rpslsImgR {
+        margin: 5% 0% 5% 0% !important;
+    }
+    #chat {
+        width: 73%;
+        margin-bottom: 3% !important;
+        margin-left: -.5%;
+    }
+    #events {
+        width: 66%;
+        height: 50vw;
+        border: 1px solid #fff;
+    }
+    #headerWrapper {
+        margin-top: 6% !important;
+        padding-bottom: 5%;
+    }
+    /* rock */
+    #imgMarginL {
+        margin: 0% 0% 5% 2.5% !important;
+    }
+    /* spock */
+    #imgMarginR {
+        margin: -.5% 2.5% 5% 0% !important;
+    }
+    #lizard {
+        margin: -7.5% 20% 0% 0%;
+    }
+    #paper {
+        margin: -7% 0% 0% 20%;
+    }
+    #rock {
+        margin: -15% 0% 0% 4%;
+    }
+    #say {
+        width: 22.5%;
+    }
+    #scissors {
+        margin: -10% 0% -5% 0% !important;
+    }
+    #spock {
+        margin: -15.5% 4% 0% 0%;
+    }
+}
+/* iPads (portrait) ------------------------------------
+---------------------------------------------------------------------- */
+@media only screen and (min-width : 601px) and (max-width : 800px) {
+    .rulesCenterImg {
+        width: 10%;
+        margin: 0% auto;
+        margin-left: 11.5% !important;
+    }
+    .rulesLeftArrow {
+        width: 8%;
+    }
+    .rulesLeftImg {
+        margin: 0% 8% 0% 8%;
+        width: 10%;
+    }
+    .rulesRightArrow {
+        width: 8%;
+    }
+    .rulesRightImg {
+        margin: 0% 8% 0% 8%;
+        width: 10%;
+    }
+    #chat {
+        width: 72%;
+        padding: 1.7%;        
+        margin-bottom: 2.5% !important;
+    }
+    #events {
+        width: 66%;
+        height: 30vw;
+        border: 1px solid #fff;
+    }
+    #headerWrapper {
+        margin-top: 3% !important;
+        padding-bottom: 5%;
+    }
+    #rulesText {
+        font-size: 4vw;
+    }
+    #say {
+        width: 22.5%;
+        font-size: 2vw !important;
+        padding: 1.3%;
+    }
+}
+/* DESKTOP -----------------------------------------------------------
+---------------------------------------------------------------------- */
+@media only screen and (min-width : 801px){
+    .resultsWrapper {
+        margin-top: 1vw !important;
+    }
+    .rpslsImg {
+        width: 10%;
+        padding: 0% 5%;
+    }
+    .rpslsImgL {
+        width: 10%;
+        padding: 0% 0% 0% 5%;
+    }
+    .rpslsImgR {
+        width: 10%;
+        padding: 0% 5% 0% 0%;
+    }
+    .rulesCenterImg {
+        width: 8% !important;
+        padding: 0% 6%;
+    }
+    .rulesLeftArrow {
+        width: 6% !important;
+    }
+    .rulesLeftImg {
+        margin: 0% 4% 0% 20%;
+        width: 6%;
+    }
+    .rulesRightArrow {
+        width: 6%;
+    }
+    .rulesRightImg {
+        margin: 0% 20% 0% 4%;
+        width: 6%;
+    }
+    #clearBoth {
+        width: 75.4%;
+        padding: 0%;
+        border-radius: 15%;
+        margin-bottom: 5%;
+    }
+    #events {
+        width: 66%;
+        height: 15vw;
+        border: 1px solid white;
+        margin: auto;
+        margin-top: -1% !important;
+    }
+    #headerText {
+        padding: 2% 0% 1% 0% !important;
+    }
+    #headerWrapper {
+        width: 75%;
+        margin: 0% auto !important;
+        border-radius: 15%; 
+    }
+    #imgMarginL {
+        margin-left: 10% !important;
+    }
+    #imgMarginR {
+        margin-right: 10% !important;
+    }
+    #lizard {
+        width: 15%;
+    }
+    #lossDiv {
+        width: 25%;
+        padding: .5%;
+        margin: 0%;
+        font-size: 1.2vw;
+    }
+    #paper {
+        width: 15%;
+    }
+    #rock {
+        margin-left:  12.5%;
+        width: 15%;
+    }
+    #rulesText {
+        padding: 3% 0% 0% 0% !important;
+        font-size: 4vw !important;
+    }
+    #scissors {
+        width: 15%;
+    }
+    #spock {
+        margin-right: 12.5%;
+        width: 15%;
+    }
+    #tieDiv {
+        width: 25%;
+        padding: .5%;
+        margin: 0%;
+        font-size: 1.2vw;
+    }
+    #winDiv {
+        width: 25%;
+        padding: .5%;
+        margin: 0%;
+        font-size: 1.2vw;
+    }
+}

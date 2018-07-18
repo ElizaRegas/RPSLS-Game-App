@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset-"UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>!Rock Paper Scissors Lizard Spock!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div>
+      <div id="headerWrapper">
+        <div id="headerText">The Weapons</div>
+
+        <img src="../assets/images/Rock.png" class="rpslsImgL" id="imgMarginL">
+        <img src="../assets/images/Paper.png" class="rpslsImgL">
+        <img src="../assets/images/Scissors.png" class="rpslsImg">
+        <img src="../assets/images/Spock.png" class="rpslsImgR" id="imgMarginR">
+        <img src="../assets/images/Lizard.png" class="rpslsImgR">
+
+        <button id="rock" class="header">Rock!</button> 
+        <button id="paper" class="header">Paper!</button> 
+        <button id="scissors" class="header">Scissors!</button> 
+        <button id="spock" class="header">Spock!</button> 
+        <button id="lizard" class="header">Lizard!</button> 
+      </div>
+    </div>
+      
+    <div class="resultsWrapper">
+      <div id="winDiv">Wins:
+        <span id="winCount"></span>
+      </div>
+      <div id="lossDiv">Losses:
+        <span id="lossCount"></span>
+      </div>
+      <div id="tieDiv">Ties:
+        <span id="tieCount"></span>
+      </div>
+    </div>
+
+    <div class="rpslsWrapper">
+      <div id="events"></div>
+
+      <form id="chat-form">
+        <input id="chat" />
+        <button id="say">Send
+        </button>
+      </form>
+      
+      <div id="clearBoth">
+        <div id="rulesText">The Rules</div>
+          <div>
+            <img src="../assets/images/Lizard.png" class="rulesLeftImg" id="rulesLeftImg1">
+            <img src="../assets/images/crushesL.png" class="rulesLeftArrow" id="rulesLeftArrow1">
+            <img src="../assets/images/Rock.png" class="rulesCenterImg" id="rulesCenterImg1">
+            <img src="../assets/images/Scissors.png" class="rulesRightImg" id="rulesRightImg1">
+            <img src="../assets/images/crushesR.png" class="rulesRightArrow" id="rulesRightArrow1">
+          </div>
+          <div>
+            <img src="../assets/images/Spock.png" class="rulesLeftImg" id="rulesLeftImg2">
+            <img src="../assets/images/disprovesL.png" class="rulesLeftArrow" id="rulesLeftArrow2">
+            <img src="../assets/images/Paper.png" class="rulesCenterImg" id="rulesCenterImg2">
+            <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg2">
+            <img src="../assets/images/coversR.png" class="rulesRightArrow" id="rulesRightArrow2">
+          </div>
+          <div>
+            <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg3">
+            <img src="../assets/images/cutL.png" class="rulesLeftArrow" id="rulesLeftArrow3">
+            <img src="../assets/images/Scissors.png" class="rulesCenterImg" id="rulesCenterImg3">
+            <img src="../assets/images/Lizard.png" class="rulesRightImg" id="rulesRightImg3">
+            <img src="../assets/images/decapitatesR.png" class="rulesRightArrow" id="rulesRightArrow3">
+          </div>
+          <div>
+            <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg4">
+            <img src="../assets/images/eatsL.png" class="rulesLeftArrow" id="rulesLeftArrow4">
+            <img src="../assets/images/Lizard.png" class="rulesCenterImg" id="rulesCenterImg4">
+            <img src="../assets/images/Spock.png" class="rulesRightImg" id="rulesRightImg4">
+            <img src="../assets/images/poisonsR.png" class="rulesRightArrow" id="rulesRightArrow4">
+          </div>
+          <div>
+            <img src="../assets/images/Scissors.png" class="rulesLeftImg" id="rulesLeftImg5">
+            <img src="../assets/images/smashesL.png" class="rulesLeftArrow" id="rulesLeftArrow5">
+            <img src="../assets/images/Spock.png" class="rulesCenterImg" id="rulesCenterImg5">
+            <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg5">
+            <img src="../assets/images/vaporizesR.png" class="rulesRightArrow" id="rulesRightArrow5">
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/javascript/client.js"></script>
+    
+  </body>
+
+</html>
