@@ -1,13 +1,17 @@
 html {
     width: 100%;
-    margin: 0px auto !important;
+    height: auto;
+    margin: 0% auto !important;
+    overflow: auto;
 }
 body {
     background-color: black;
+    background-size: cover;
     color: white;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     margin: 0% auto !important;
+    overflow: auto;
 }
 button {     
     background-color: Transparent;
@@ -34,6 +38,8 @@ button {
     text-shadow:  2px 2px 8px grey;
     color: black;
     background-color:  t;
+    width: 18% !important;
+    margin: 2% 0% 0% 0%;
 }
 .resultsWrapper {
     clear: both;
@@ -53,26 +59,32 @@ button {
     float: left;
 }
 .rpslsImg {
-    width: 15%;
+    /* width: 15%;
     padding: 2%;
     padding-bottom: -10vw !important;
     margin: 0% auto !important;
     margin-bottom: 0vw !important;
-    align-items:  center;
+    align-items:  center; */
+    width: 100%;
+    padding: 1% 0% 10% 0%;
 }
 .rpslsImgL {
-    width: 15%;
+    /* width: 15%;
     padding: 2%;
     margin: 0% auto !important;
     align-items:  center;
-    float: left;
+    float: left; */
+    width: 100%;
+    padding: 1% 0% 10% 0%;
 }
 .rpslsImgR {
-    width: 15%;
+    /* width: 15%;
     padding: 2%;
     margin: 0% auto !important;
     align-items:  center;
-    float: right;
+    float: right; */
+    width: 100%;
+    padding: 1% 0% 10% 0%;
 }
 .rpslsWrapper {
     clear: both;
@@ -138,11 +150,11 @@ button {
     margin: auto;
 }
 #headerText {
-    text-align: center !important;
+    text-align: center;
     color: black;
-    padding: 3% 0% 0% 0% !important;
+    padding: 3% 0% 0% 0%;
     font-family: 'Marck Script', cursive;
-    text-shadow:  2px 2px 8px grey;
+    text-shadow: 2px 2px 8px grey;
     font-size: 5vw !important;
 }
 #headerWrapper {
@@ -152,14 +164,21 @@ button {
     width: 66%;
     margin: 0% auto !important;
 }
-#imgMarginL {margin-left: 2.5% !important;}
-#imgMarginR {margin-right: 2.5% !important;}
+#imgMarginL {    
+    width: 100%;
+    padding: 1% 0% 10% 0%;
+}
+#imgMarginR {
+    width: 100%;
+    padding: 1% 0% 10% 0%;
+}
 #lizard {float: right;width: 22%;}
 #lossDiv {
     float: right;
     border: 1px solid white;
     width: 25%;
     padding: 1%;
+    border-radius: 10px;
 }
 #paper {
     float: left;
@@ -200,17 +219,23 @@ button {
     border: 1px solid white;
     width: 25%;
     padding: 1%;
+    border-radius: 10px;
 }
 #winDiv {
     float: left;
     border: 1px solid white;
     width: 25%;
     padding: 1%;
+    border-radius: 10px;
 }
 
 /* Smartphones (portrait) --------------------------------------------
 ---------------------------------------------------------------------- */
 @media only screen and (max-width : 320px) {
+    body {
+        width: 100% !important;
+        margin: 0% auto !important;
+    }
     .createdDiv {
         font-size: 4vw;
     }
@@ -221,34 +246,35 @@ button {
     .resultsWrapper {
         width: 95%;
     }
-    .row1 {
+    /* .row1 {
         width: 12%;
-    }
+    } */
     /* scissors */
-    .rpslsImg {
+    /* .rpslsImg {
         margin: 10% 0% 5% 0% !important;
-    }
+    } */
     /* paper */
-    .rpslsImgL {
+    /* .rpslsImgL {
         margin: 5% 0% 5% 0% !important;
-    }
+    } */
     /* lizard */
-    .rpslsImgR {
+    /* .rpslsImgR {
         margin: 5% 0% 5% 0% !important;
-    }
+    } */
     .rpslsWrapper {
-        width: 100% !important;
+        width: 100%;
+        border-radius: 10px;
     }
-    .rulesCenterImg {
+    /* .rulesCenterImg {
         width: 12%;
         margin: 0% auto;
         margin-left: 10% !important;
-    }
-    .rulesLeftArrow {
+    } */
+    /* .rulesLeftArrow {
         width: 12%;
         float: left;
-    }
-    .rulesLeftImg {
+    } */
+    /* .rulesLeftImg {
         float: left;
         margin: 2% 4% 0% 8%;
         width: 10%;
@@ -256,12 +282,12 @@ button {
     .rulesRightArrow {
         width: 12%;
         float: right;
-    }
-    .rulesRightImg {
+    } */
+    /* .rulesRightImg {
         float: right;
         margin: 2% 8% 0% 4%;
         width: 10%;
-    }
+    } */
     .theRules {
         width: 50%;
         margin: 0% 25%;
@@ -269,6 +295,7 @@ button {
     #chat {
         width: 75%;
         margin: 1% 0% 2.5% 2.5% !important;
+        border-radius: 10px;
     }
     #chat-form {
         width: 100%;
@@ -280,45 +307,51 @@ button {
     }
     #events {
         width: 100%;
-        height: 50vw;
+        height: 70vw;
         border: 1px solid #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top
     }
     #headerText {
         font-size: 8vw !important;
+        padding: 3%;
     }
     #headerWrapper {
-        margin-top: 7% !important;
-        padding-bottom: 5%;
-        width: 100% !important;
+        padding-bottom: 4%;
+        width: 100%;
+        /* border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; */
     }
     /* rock */
-    #imgMarginL {
+    /* #imgMarginL {
         margin: 0% 0% 5% 2.5% !important;
-    }
+    } */
     /* spock */
-    #imgMarginR {
+    /* #imgMarginR {
         margin: -.5% 2.5% 5% 0% !important;
-    }
+    } */
     #lizard {
-        margin: -7.5% 22% 0% 0%;
+        margin: 0% 0% 0% 0%;
     }
     #paper {
-        margin: -7% 0% 0% 22%;
+        margin: 0% 0% 0% 0%;
     }
     #rock {
-        margin: -15% 0% 0% 4%;
+        margin: 0% 0% 0% 5%;
     }
     #say {
         width: 15%;
         /* font-size: 3.5vw !important; */
         color: white;
         margin: 1% 2.5% 2.5% 0% !important;
+        border-radius: 10px;
     }
     #scissors {
-        margin: -10% 0% 0% 0% !important;
+        margin: 0% 0% 0% 0% !important;
     }
     #spock {
-        margin: -15.5% 4% 0% 0%;
+        margin: 0% 5% 0% 0%;
     }
     #lossDiv, #tieDiv, #winDiv {
         font-size: 3vw;
@@ -357,6 +390,7 @@ button {
     #chat {
         width: 75%;
         margin: 1% 0% 2.5% 2.5% !important;
+        border-radius: 10px;
     }
     #chat-form {
         width: 100%;
@@ -374,7 +408,7 @@ button {
     }
     #headerWrapper {
         padding-bottom: 5%;
-        width: 100%;
+        width: 100% !important;
     }
     /* rock */
     #imgMarginL {
@@ -401,6 +435,7 @@ button {
         /* font-size: 3.5vw !important; */
         color: white;
         margin: 1% 2.5% 2.5% 0% !important;
+        border-radius: 10px;
     }
     #scissors {
         margin: 0% 0% 0% 0% !important;
@@ -412,6 +447,21 @@ button {
 /* iPads (portrait) ------------------------------------
 ---------------------------------------------------------------------- */
 @media only screen and (min-width : 601px) and (max-width : 800px) {
+    .createdDiv {
+        font-size: 2.5vw;
+
+    }
+    .header {
+        font-size: 3vw;
+    }
+    .resultsWrapper {
+        width: 75%;
+        font-size: 2vw;
+    }
+    .rpslsWrapper {
+        width: 100%;
+        margin: 0% auto;
+    }
     .rulesCenterImg {
         width: 10%;
         margin: 0% auto;
@@ -431,27 +481,47 @@ button {
         margin: 0% 8% 0% 8%;
         width: 10%;
     }
+    .theRules {
+        width: 50%;
+        padding: 0% 25%;
+    }
     #chat {
-        width: 72%;
-        padding: 1.7%;        
-        margin-bottom: 2.5% !important;
+        width: 80%;
+        margin: 1% 0% 2.5% 0% !important;
+        line-height: 3vw;
+        border-radius: 10px;
+    }
+    #chat-form {
+        width: 80%;
+    }
+    #clearBoth {
+        padding: 0%;
+        width: 80%;
+        border-radius: 10px;
     }
     #events {
-        width: 66%;
-        height: 30vw;
+        width: 80%;
+        height: 50vw;
         border: 1px solid #fff;
+        border-radius: 10px;
     }
     #headerWrapper {
-        margin-top: 3% !important;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
+        width: 80%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     #rulesText {
-        font-size: 4vw;
+        font-size: 5vw;
+        padding: 3% 0% 0% 0%;
     }
     #say {
-        width: 22.5%;
-        font-size: 2vw !important;
-        padding: 1.3%;
+        width: 15%;
+        /* font-size: 3.5vw !important; */
+        color: white;
+        margin: 1% 0% 2.5% 0% !important;
+        line-height: 3vw;
+        border-radius: 10px;
     }
 }
 /* DESKTOP -----------------------------------------------------------
