@@ -101,6 +101,9 @@ button {
     margin: 2% 8% 0% 4%;
     width: 12%;
 }
+.theRules {
+    width: 100%;
+}
 /* IDS ---------------------------------------------------------------
 ---------------------------------------------------------------------- */
 #chat {
@@ -216,7 +219,7 @@ button {
         width: 18% !important;
     }
     .resultsWrapper {
-        width: 100%;
+        width: 95%;
     }
     .row1 {
         width: 12%;
@@ -259,10 +262,13 @@ button {
         margin: 2% 8% 0% 4%;
         width: 10%;
     }
+    .theRules {
+        width: 50%;
+        margin: 0% 25%;
+    }
     #chat {
         width: 75%;
-        margin: 0% auto;
-        margin-bottom: 1.5%;
+        margin: 1% 0% 2.5% 2.5% !important;
     }
     #chat-form {
         width: 100%;
@@ -276,6 +282,9 @@ button {
         width: 100%;
         height: 50vw;
         border: 1px solid #fff;
+    }
+    #headerText {
+        font-size: 8vw !important;
     }
     #headerWrapper {
         margin-top: 7% !important;
@@ -300,9 +309,10 @@ button {
         margin: -15% 0% 0% 4%;
     }
     #say {
-        width: 20%;
-        font-size: 3.5vw !important;
+        width: 15%;
+        /* font-size: 3.5vw !important; */
         color: white;
+        margin: 1% 2.5% 2.5% 0% !important;
     }
     #scissors {
         margin: -10% 0% 0% 0% !important;
@@ -340,14 +350,23 @@ button {
     .rpslsImgR {
         margin: 0% 0% 0% 0% !important;
     }
+    .theRules {
+        width: 50%;
+        margin: 0% 25%;
+    }
     #chat {
         width: 75%;
-        margin-bottom: 3% !important;
-        margin-left: -.5%;
+        margin: 1% 0% 2.5% 2.5% !important;
+    }
+    #chat-form {
+        width: 100%;
+    }
+    #clearBoth {
+        width: 100%;
     }
     #events {
         width: 100%;
-        height: 50vw;
+        height: 70vw;
         border: 1px solid #fff;
     }
     #headerText {
@@ -374,10 +393,14 @@ button {
     #rock {
         margin: 0% 0% 0% 2.5% !important;
     }
+    #rulesText {
+        font-size: 7vw;
+    }
     #say {
-        width: 20%;
-        font-size: 3.5vw !important;
+        width: 15%;
+        /* font-size: 3.5vw !important; */
         color: white;
+        margin: 1% 2.5% 2.5% 0% !important;
     }
     #scissors {
         margin: 0% 0% 0% 0% !important;
