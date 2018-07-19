@@ -47,7 +47,7 @@
               <img src="../assets/images/Lizard.png" class="rpslsImgR">
               <br>Lizard!
             </button> 
-            
+
           </div>
         <!-- </div>
       </div> -->
@@ -56,26 +56,29 @@
     <!-- <div class="container">
       <div class="row"> -->
         <!-- <div class="col-sm-12 col-md-12 col-lg-4"> -->
-          <div class="resultsWrapper">
-            <div id="winDiv">Wins:
-              <span id="winCount"></span>
+          <div id="divLeftScore">
+            <div id="scoreText">The Score</div>
+            <div class="resultsWrapper">
+              <div id="winDiv">Wins:
+                <span id="winCount"></span>
+              </div>
+              <div id="lossDiv">Losses:
+                <span id="lossCount"></span>
+              </div>
+              <div id="tieDiv">Ties:
+                <span id="tieCount"></span>
+              </div>
             </div>
-            <div id="lossDiv">Losses:
-              <span id="lossCount"></span>
-            </div>
-            <div id="tieDiv">Ties:
-              <span id="tieCount"></span>
-            </div>
-          </div>
 
-          <div class="rpslsWrapper">
-            <div id="events"></div>
+            <div class="rpslsWrapper">
+              <div id="events"></div>
 
-            <form id="chat-form">
-              <input id="chat" />
-              <button id="say">Send
-              </button>
-            </form>
+              <form id="chat-form">
+                <input id="chat" />
+                <button id="say">Send
+                </button>
+              </form>
+            </div>
           </div>
         <!-- </div>
       </div>
@@ -84,44 +87,46 @@
     <!-- <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-4"> -->
-          <div id="clearBoth">
-            <div id="rulesText">The Rules</div>
-            <img src="../assets/images/TheRules.png" class="theRules">
-            <!-- <div>
-              <img src="../assets/images/Lizard.png" class="rulesLeftImg" id="rulesLeftImg1">
-              <img src="../assets/images/crushesL.png" class="rulesLeftArrow" id="rulesLeftArrow1">
-              <img src="../assets/images/Rock.png" class="rulesCenterImg" id="rulesCenterImg1">
-              <img src="../assets/images/Scissors.png" class="rulesRightImg" id="rulesRightImg1">
-              <img src="../assets/images/crushesR.png" class="rulesRightArrow" id="rulesRightArrow1">
+          <div id="divRightRules">
+            <div id="clearBoth">
+              <div id="rulesText">The Rules</div>
+              <img src="../assets/images/TheRules.png" class="theRules">
+              <!-- <div>
+                <img src="../assets/images/Lizard.png" class="rulesLeftImg" id="rulesLeftImg1">
+                <img src="../assets/images/crushesL.png" class="rulesLeftArrow" id="rulesLeftArrow1">
+                <img src="../assets/images/Rock.png" class="rulesCenterImg" id="rulesCenterImg1">
+                <img src="../assets/images/Scissors.png" class="rulesRightImg" id="rulesRightImg1">
+                <img src="../assets/images/crushesR.png" class="rulesRightArrow" id="rulesRightArrow1">
+              </div>
+              <div>
+                <img src="../assets/images/Spock.png" class="rulesLeftImg" id="rulesLeftImg2">
+                <img src="../assets/images/disprovesL.png" class="rulesLeftArrow" id="rulesLeftArrow2">
+                <img src="../assets/images/Paper.png" class="rulesCenterImg" id="rulesCenterImg2">
+                <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg2">
+                <img src="../assets/images/coversR.png" class="rulesRightArrow" id="rulesRightArrow2">
+              </div>
+              <div>
+                <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg3">
+                <img src="../assets/images/cutL.png" class="rulesLeftArrow" id="rulesLeftArrow3">
+                <img src="../assets/images/Scissors.png" class="rulesCenterImg" id="rulesCenterImg3">
+                <img src="../assets/images/Lizard.png" class="rulesRightImg" id="rulesRightImg3">
+                <img src="../assets/images/decapitatesR.png" class="rulesRightArrow" id="rulesRightArrow3">
+              </div>
+              <div>
+                <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg4">
+                <img src="../assets/images/eatsL.png" class="rulesLeftArrow" id="rulesLeftArrow4">
+                <img src="../assets/images/Lizard.png" class="rulesCenterImg" id="rulesCenterImg4">
+                <img src="../assets/images/Spock.png" class="rulesRightImg" id="rulesRightImg4">
+                <img src="../assets/images/poisonsR.png" class="rulesRightArrow" id="rulesRightArrow4">
+              </div>
+              <div>
+                <img src="../assets/images/Scissors.png" class="rulesLeftImg" id="rulesLeftImg5">
+                <img src="../assets/images/smashesL.png" class="rulesLeftArrow" id="rulesLeftArrow5">
+                <img src="../assets/images/Spock.png" class="rulesCenterImg" id="rulesCenterImg5">
+                <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg5">
+                <img src="../assets/images/vaporizesR.png" class="rulesRightArrow" id="rulesRightArrow5">
+              </div>    -->
             </div>
-            <div>
-              <img src="../assets/images/Spock.png" class="rulesLeftImg" id="rulesLeftImg2">
-              <img src="../assets/images/disprovesL.png" class="rulesLeftArrow" id="rulesLeftArrow2">
-              <img src="../assets/images/Paper.png" class="rulesCenterImg" id="rulesCenterImg2">
-              <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg2">
-              <img src="../assets/images/coversR.png" class="rulesRightArrow" id="rulesRightArrow2">
-            </div>
-            <div>
-              <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg3">
-              <img src="../assets/images/cutL.png" class="rulesLeftArrow" id="rulesLeftArrow3">
-              <img src="../assets/images/Scissors.png" class="rulesCenterImg" id="rulesCenterImg3">
-              <img src="../assets/images/Lizard.png" class="rulesRightImg" id="rulesRightImg3">
-              <img src="../assets/images/decapitatesR.png" class="rulesRightArrow" id="rulesRightArrow3">
-            </div>
-            <div>
-              <img src="../assets/images/Paper.png" class="rulesLeftImg" id="rulesLeftImg4">
-              <img src="../assets/images/eatsL.png" class="rulesLeftArrow" id="rulesLeftArrow4">
-              <img src="../assets/images/Lizard.png" class="rulesCenterImg" id="rulesCenterImg4">
-              <img src="../assets/images/Spock.png" class="rulesRightImg" id="rulesRightImg4">
-              <img src="../assets/images/poisonsR.png" class="rulesRightArrow" id="rulesRightArrow4">
-            </div>
-            <div>
-              <img src="../assets/images/Scissors.png" class="rulesLeftImg" id="rulesLeftImg5">
-              <img src="../assets/images/smashesL.png" class="rulesLeftArrow" id="rulesLeftArrow5">
-              <img src="../assets/images/Spock.png" class="rulesCenterImg" id="rulesCenterImg5">
-              <img src="../assets/images/Rock.png" class="rulesRightImg" id="rulesRightImg5">
-              <img src="../assets/images/vaporizesR.png" class="rulesRightArrow" id="rulesRightArrow5">
-            </div>    -->
           </div>
         <!-- </div>
       </div>

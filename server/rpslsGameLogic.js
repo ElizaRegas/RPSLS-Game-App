@@ -5,7 +5,7 @@ class rpslsGame {
     this.players = [p1, p2];
     this.turns = [];
 
-    this.sendToPlayers('Your opponent is ready!')
+    this.sendToPlayers('Your opponent is ready.')
     this.sendToPlayers('Let the games begin! Select your weapon of choice.');
 
     this.players.forEach((player, index) => {
