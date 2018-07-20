@@ -538,6 +538,9 @@ button {
     .createdDiv {
         font-size: 1.2vw;
     }
+    .divBoxes {
+        flex: 1;
+    }
     .header {
         width: 14% !important;
         margin: 0% 2% 2% 2%;
@@ -578,18 +581,28 @@ button {
     }
     .theRules {
         width: 70%;
-        padding: 4% 14% 2.7% 14%;
+        padding: 2% 14% 2% 14%;
     }
     #chat {
-        margin: 0vw 1vw 1vw -2vw;
-        /* border-radius: 5px; */
+        float: none !important;
+        margin: 0% 1.9% 0% 0%;
+        width: 75%;
+        box-sizing: border-box;
+    }
+    #chat-form {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
     }
     #clearBoth {
-        width: 75.4%;
+        width: 95%;
         padding: 0%;
         border-radius: 10px;
         /* margin-bottom: 5%; */
         margin-left: 0%;
+        margin-top: 3% !important;
+        margin-right: 0% !important;
+        float: right;
     }
     #divLeftScore {
         float: left;
@@ -597,27 +610,29 @@ button {
         background-image:  url('../images/Green.jpg');
         background-size: cover;
         border-radius: 10px;
-        margin: 1.5% 0% 0% 15%;
+        margin: 1.5% 0% 0% 0%;
         color: black !important;
     }
     #divRightRules {
         float: right;
         width: 35%;
-        margin: 0% 6.5% 0% 0%;
+        margin: 0%;
     }
     #events {
         width: 75%;
-        height: 15vw;
+        height: 18vw;
         border: 2px inset #ccc;
         /* border-radius: 10px; */
         margin: 0% auto;
         background-color: #ddd;
         box-shadow: 2px 2px 2px grey;
+        box-sizing: border-box;
     }
     #fullScreenWrapper {
-        width: auto;
-        height: 29vw;
-        overflow: unset;
+        width: 70%;
+        height: auto;
+        display: flex;
+        margin: 0% auto;
     }
     #headerText {
         padding: 2% 0% 1% 0% !important;
@@ -658,10 +673,11 @@ button {
         font-size: 4vw !important;
     }
     #say {
-        margin: 0vw -2vw 1vw 0vw;
+        float: none !important;
+        margin: 0%;
         /* border-radius: 5px; */
-        width: 24%;
-        line-height: 145%;
+        width: 22%;
+        box-sizing: border-box;
     }
     #scissors {
         width: 15%;
